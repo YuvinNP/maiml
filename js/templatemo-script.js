@@ -55,7 +55,7 @@ function setupGallery() {
 }
 
 function openPage(no) {
-  if(no == 4) {
+  if(no == 4 & no == 5) {
     if(gallery == undefined) {
       setupGallery();
     } else {
@@ -68,6 +68,8 @@ function openPage(no) {
   $('.cd-hero-slider li[data-page-no="' + no + '"]')
     .fadeIn();
 }
+
+
 
 $(window).on('load', function() {
   $('body').addClass('loaded');
